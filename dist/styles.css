@@ -1,0 +1,337 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap");
+:root {
+  --nav-text: hsl(270, 3%, 40%);
+  --soft-orange: hsl(35, 77%, 62%);
+  --soft-red: hsl(5, 85%, 63%);
+  --grayish-blue: hsl(233, 8%, 79%);
+  --dark-grayish-blue: hsl(236, 13%, 42%);
+  --off-white: hsl(36, 100%, 99%);
+  --very-dark-blue: hsl(240, 100%, 5%);
+  --fw-400: 400;
+  --fw-700: 700;
+  --fw-800: 800;
+  --ff-main: "Inter", sans-serif;
+  /* Font Sizes */
+  --fs-small: 0.875rem; /* 14px */
+  --fs-base: 1rem; /* 16px */
+  --fs-large: 1.25rem; /* 20px */
+  --fs-xlarge: 1.5rem; /* 24px */
+  --fs-xxlarge: 2rem; /* 32px */
+  /* Spacing */
+  --sp-xxs: 0.25rem; /* 4px */
+  --sp-xs: 0.5rem; /* 8px */
+  --sp-sm: 0.75rem; /* 12px */
+  --sp-md: 1rem; /* 16px */
+  --sp-lg: 1.25rem; /* 20px */
+  --sp-xl: 1.5rem; /* 24px */
+  --sp-xxl: 2rem; /* 32px */
+  --sp-xxxl: 3rem; /* 48px */
+  --sp-huge: 8.75rem; /* 140px */
+  /* Border Radius */
+  --br-small: 0.25rem; /* 4px */
+  --br-medium: 0.5rem; /* 8px */
+  --br-large: 1rem; /* 16px */
+  /* Shadows */
+  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.1);
+  --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.1);
+  --shadow-lg: 0 10px 15px rgba(0, 0, 0, 0.1);
+  --shadow-xl: 0 20px 25px rgba(0, 0, 0, 0.1);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style-type: none;
+  /* No bullets */
+  padding: 0;
+  /* No padding */
+  margin: 0;
+  /* No margin */
+}
+
+a {
+  text-decoration: none;
+  /* Removes the default underline */
+  color: inherit;
+  /* Inherits the color from the parent element */
+  /* Optionally, you can reset other properties like font-weight or background here */
+}
+
+button {
+  all: unset;
+}
+
+h1, h3, h3, h4, h5, h6 {
+  color: var(--very-dark-blue);
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+body {
+  font-family: var(--ff-main);
+  color: var(--dark-grayish-blue);
+}
+
+.wrapper {
+  background-color: var(--off-white);
+  max-width: 1150px;
+  padding-inline: 15px;
+  margin-block: auto;
+}
+@media (min-width: 600px) {
+  .wrapper {
+    margin: 0 auto;
+  }
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-block: 25px;
+}
+.header__logo {
+  width: 50px;
+}
+@media (min-width: 600px) {
+  .header__logo {
+    width: 70px;
+  }
+}
+.header__logo img {
+  width: 100%;
+}
+.header__mn {
+  z-index: 2;
+}
+@media (min-width: 600px) {
+  .header__mn {
+    display: none;
+  }
+}
+.header__navList {
+  position: fixed;
+  background-color: var(--off-white);
+  top: 0px;
+  right: -100px;
+  width: 0%;
+  height: 100vh;
+  z-index: 1;
+  transition: all 0.3s ease;
+}
+.header__navList ul {
+  margin-left: var(--sp-lg);
+  margin-top: var(--sp-huge);
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+@media (min-width: 600px) {
+  .header__navList ul {
+    margin: 0;
+    flex-direction: row;
+  }
+}
+.header__navList ul li a {
+  font-size: var(--fs-large);
+  font-weight: var(--fw-400);
+  color: var(--very-dark-blue);
+}
+@media (min-width: 600px) {
+  .header__navList ul li a {
+    font-size: 16px;
+    margin-left: 20px;
+  }
+}
+.header__navList ul li a:hover {
+  color: var(--soft-red);
+}
+@media (min-width: 600px) {
+  .header__navList {
+    position: static;
+    height: auto;
+    width: auto;
+  }
+}
+@media (min-width: 600px) {
+  .header {
+    align-items: center;
+    margin-top: 70px;
+    margin-bottom: 15px;
+  }
+}
+
+.featureArea {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.featureArea__hero {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+.featureArea__hero__subhero {
+  display: grid;
+  gap: 20px;
+}
+.featureArea__hero__subhero h1 {
+  margin-top: 20px;
+  font-size: 2.6rem;
+  line-height: 1;
+  font-weight: 900;
+}
+@media (min-width: 600px) {
+  .featureArea__hero__subhero h1 {
+    font-size: 3.5rem;
+  }
+}
+.featureArea__hero__subhero__description {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.featureArea__hero__subhero__description p {
+  line-height: 1.7;
+  font-size: 15px;
+  font-weight: 400;
+  margin-top: 15px;
+}
+@media (min-width: 600px) {
+  .featureArea__hero__subhero {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+.featureArea__sidebar {
+  margin-block: 45px;
+  background-color: var(--very-dark-blue);
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  gap: 20px;
+}
+.featureArea__sidebar h2 {
+  color: var(--soft-orange);
+  font-size: 2rem;
+}
+.featureArea__sidebar__item {
+  padding-block: 15px;
+  border-bottom: 1px solid var(--dark-grayish-blue);
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+.featureArea__sidebar__item p {
+  line-height: 1.5;
+  font-size: 15px;
+  color: var(--grayish-blue);
+  font-weight: 400;
+}
+.featureArea__sidebar__item:last-child {
+  border: none;
+}
+.featureArea__sidebar__item a {
+  font-weight: 700;
+  color: white;
+  font-size: 1.2rem;
+}
+.featureArea__sidebar__item a:hover {
+  color: var(--soft-red);
+}
+@media (min-width: 600px) {
+  .featureArea__sidebar {
+    margin: 0;
+  }
+}
+@media (min-width: 600px) {
+  .featureArea {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 30px;
+    margin-bottom: 50px;
+  }
+}
+
+.mainArea {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 25px;
+}
+.mainArea__post {
+  display: flex;
+  gap: 15px;
+}
+.mainArea__post__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.mainArea__post__content span {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--soft-red);
+}
+.mainArea__post__content p {
+  font-size: 15px;
+}
+.mainArea__post__content a {
+  font-weight: 700;
+}
+.mainArea__post__content a:hover {
+  color: var(--soft-red);
+}
+.mainArea img {
+  width: 35%;
+  height: auto;
+}
+@media (min-width: 600px) {
+  .mainArea {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    margin-bottom: 50px;
+  }
+}
+
+.navOverlay {
+  display: none;
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100%;
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.2));
+  z-index: 0;
+  transition: all 0.3s ease;
+}
+@media (min-width: 600px) {
+  .navOverlay {
+    display: none;
+  }
+}
+
+.btn {
+  cursor: pointer;
+  display: inline-block;
+  background-color: var(--soft-red);
+  color: var(--very-dark-blue);
+  font-weight: 700;
+  padding: 15px;
+  text-align: center;
+  text-transform: uppercase;
+  width: 45%;
+  letter-spacing: 3px;
+}
+.btn:hover {
+  background-color: var(--very-dark-blue);
+  color: white;
+}
+
+/*# sourceMappingURL=styles.css.map */

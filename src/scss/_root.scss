@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap');
+
+:root {
+    --nav-text: hsl(270, 3%, 40%);
+    --soft-orange: hsl(35, 77%, 62%);
+    --soft-red: hsl(5, 85%, 63%);
+    --grayish-blue: hsl(233, 8%, 79%);
+    --dark-grayish-blue: hsl(236, 13%, 42%);
+    --off-white: hsl(36, 100%, 99%);
+    --very-dark-blue: hsl(240, 100%, 5%);
+  
+    --fw-400: 400;
+    --fw-700: 700;
+    --fw-800: 800;
+  
+    --ff-main: 'Inter', sans-serif;
+
+      /* Font Sizes */
+    --fs-small: 0.875rem; /* 14px */
+    --fs-base: 1rem;      /* 16px */
+    --fs-large: 1.25rem;  /* 20px */
+    --fs-xlarge: 1.5rem;  /* 24px */
+    --fs-xxlarge: 2rem;   /* 32px */
+
+    /* Spacing */
+      --sp-xxs: 0.25rem;   /* 4px */
+      --sp-xs: 0.5rem;   /* 8px */
+      --sp-sm: 0.75rem;   /* 12px */
+      --sp-md: 1rem;   /* 16px */
+      --sp-lg: 1.25rem;   /* 20px */
+      --sp-xl: 1.5rem;   /* 24px */
+      --sp-xxl: 2rem;   /* 32px */
+      --sp-xxxl: 3rem;   /* 48px */
+      --sp-huge: 8.75rem;   /* 140px */
+
+
+    /* Border Radius */
+    --br-small: 0.25rem;  /* 4px */
+    --br-medium: 0.5rem;  /* 8px */
+    --br-large: 1rem;     /* 16px */
+    
+    /* Shadows */
+    --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.1);
+    --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.1);
+    --shadow-lg: 0 10px 15px rgba(0, 0, 0, 0.1);
+    --shadow-xl: 0 20px 25px rgba(0, 0, 0, 0.1);
+
+  }
+  

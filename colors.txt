@@ -1,0 +1,4 @@
+background hsl(48, 71%, 99%)
+logo hsl(240, 100%, 5%)
+button hsl(5, 80%, 55%)
+nav text hsl(270, 3%, 40%)

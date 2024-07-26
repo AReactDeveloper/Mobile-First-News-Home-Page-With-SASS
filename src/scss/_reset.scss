@@ -1,0 +1,40 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style-type: none;
+    /* No bullets */
+    padding: 0;
+    /* No padding */
+    margin: 0;
+    /* No margin */
+}
+
+a {
+    text-decoration: none;
+    /* Removes the default underline */
+    color: inherit;
+    /* Inherits the color from the parent element */
+    /* Optionally, you can reset other properties like font-weight or background here */
+}
+
+button{
+    all: unset;
+}
+
+h1,h3,h3,h4,h5,h6{
+    color: var(--very-dark-blue);
+}
+
+img{
+    width: 100%;
+    height: auto;
+}
+
+body{
+    font-family: var(--ff-main);
+    color: var(--dark-grayish-blue);
+}
