@@ -2,7 +2,7 @@
 const btn = document.getElementById("mobileNavBtn")
 const navigation = document.getElementById("navigation")
 const navOverlay = document.querySelector(".navOverlay")
-let isOpen = true
+let isOpen = false
 //on click increase the widith and make after element visible
 //change the photo
 btn.addEventListener('click',()=>!isOpen ? openNav() : closeNav())
