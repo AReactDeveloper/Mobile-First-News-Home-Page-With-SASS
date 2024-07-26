@@ -12,12 +12,12 @@ navOverlay.addEventListener('click',()=>closeNav())
 const openNav = ()=>{
     navigation.style.width = '95%'
     navOverlay.style.display = "block"
-    btn.firstChild.src = './../assets/images/icon-menu-close.svg'
+    btn.firstChild.src = 'https://areactdeveloper.github.io/Mobile-First-News-Home-Page-With-SASS/assets/images/icon-menu-close.svg'
     isOpen = true
 }
 const closeNav = ()=>{
     navigation.style.width = '0px'
     navOverlay.style.display = "none"
-    btn.firstChild.src = './../assets/images/icon-menu.svg'
+    btn.firstChild.src = 'https://areactdeveloper.github.io/Mobile-First-News-Home-Page-With-SASS/assets/images/icon-menu.svg'
     isOpen = false
 }
